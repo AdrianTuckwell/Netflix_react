@@ -9,7 +9,7 @@ var ActorContainer = React.createClass({
             focusMovie: null };
   },
   componentDidMount: function() {
-    var url = "http://netflixroulette.net/api/api.php?actor=Jim%20Carrey";
+    var url = "http://netflixroulette.net/api/api.php?actor=Jennifer%20Aniston";
     var request = new XMLHttpRequest();
     request.open('GET', url);
     request.onload = function() {
@@ -21,7 +21,7 @@ var ActorContainer = React.createClass({
   render: function() {
     return(
       <div>
-        <h2>Jim Carrey</h2>
+        <h2>Jennifer Aniston</h2>
         <MovieSelector
           movies={this.state.movies}
           selectMovie={this.setFocusMovie}
